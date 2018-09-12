@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Народный</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jQuery3.2.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Спортивный зал</h3>
+                <h4>"Народный"</h4>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mainikons">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+    <img src="images/Изображение сделано 26.12.2017 .26.jpg">
+    <h2>3 зала</h2>
+            </div>
+            <div class="col-lg-3">
+    <img src="images/Изображение сделано 26.12.2017 в 14.26.jpg">
+    <h2>Опытные тренера</h2>
+            </div>
+            <div class="col-lg-3">
+    <img src="images/Изображение сделано 26.12.2017 в 14.24.jpg">
+    <h2>Необходимое оборудование</h2>
+            </div>
+            <div class="col-lg-3">
+    <img src="images/Изображение сделано 26.12.2017 в 14.25.jpg">
+    <h2>Низкие цены</h2>
+            </div>
+</div>
+</div>
+</div>
+<div class="mainna">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <ul>
+                    <li><a href="gallery.html">Галлерея</a></li>
+                        </ul>
+
+            </div>
+            <div class="col-lg-6">
+                <ul>
+                    <li><a href="Contacts.html">Контакты</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="maintext">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Тренажерный зал. Условия.</h3>
+                <p> Каждый посетитель клуба не останется один на один с тренажерами и своими целями.
+                    Опытный тренер проконсультирует по вопросам питания, поможет подобрать эффективную программу и благодаря
+                    грамотному подходу достичь желаемого результата.<br></p>
+                    <p>Вдохновляющая обстановка, царящая в клубе <b>«Народный»,</b> способствует активным занятиям,
+                    ощущению свободы и легкости.<br>
+                    Все это, в сочетании с приятными ценами и дружеской атмосферой нашего клуба,
+                    без сомнения позволит кроме результата получить еще и массу удовольствия.
+                <p>Если вы любите себя по-настоящему, то должны всерьез задуматься о здоровье и красоте вашего тела.
+                    Спортивный зал «Народный» приглашает всех любителей и профессионалов посетить занятий по различным дисциплинам:
+
+                <ul>
+                <li>Фитнес</li>
+                    <li>Пилатес</li>
+                    <li>Шейпинг</li>
+                    <li>Восточные танцы</li>
+                    <li>Хип-хоп</li>
+
+                </ul>
+                    <h3>Вместе — Мы сделаем наш клуб самым современным, интересным.
+                    У нас много возможностей, сил, энергии и желания!</h3></p>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="trener">
+                    <div class="fotos">
+                        <img src='images/q4pvlWh1KDg.png' class="imgdemo" />
+                        <img src='images/dCiHmtUecW8.png' class="imgdemo" />
+                        <img src='images/3n6cJ0OEWoM.png' class="imgdemo" />
+                        <img src='images/8Oy3pt0pXKc.png' class="imgdemo" />
+                        <img src='images/p8lSsxsToIw.png' class="imgdemo" />
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<footer class="footers">
+    <h5>@ "Народный" 2018</h5>
+</footer>
+
+
+<script type="text/javascript">
+    $(function() {
+        var imgnum = $('.imgdemo').length;
+        var currentimg = 0;
+        function playslider() {
+            if (currentimg > imgnum - 1) {
+                currentimg = 0;
+            }
+            $($('.imgdemo').get(currentimg)).fadeIn(500).delay(3000).fadeOut(500, playslider);
+            currentimg++;
+        }
+        playslider();
+    });
+</script>
+</body>
+</html>
